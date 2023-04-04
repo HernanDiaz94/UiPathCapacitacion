@@ -1,0 +1,40 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF manage(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "textoPDF&Sequence_2",
+        "dtTickets&Flowchart_1",
+        "dirPdf&Flowchart_1",
+        "nroTicket&Sequence_2",
+        "puntoVenta&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "puntoVenta&Sequence_4",
+        "nroTicket&Sequence_4",
+        "textoPDF&Sequence_4",
+        "dirPdf&Flowchart_1",
+        "dtTickets&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
