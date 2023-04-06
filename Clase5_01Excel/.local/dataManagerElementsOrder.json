@@ -1,0 +1,37 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "razonSocial&Flowchart_1",
+        "razonSocial&Sequence_5",
+        "rutaExcel&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ConsultarRazonSocial.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "msj&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_cuit",
+        "out_razonSocial"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
