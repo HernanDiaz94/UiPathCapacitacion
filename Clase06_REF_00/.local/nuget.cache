@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kRyDKpQ4XMKSt8GYXebWBYKsLIFSCg+KnAjkuBthSXA/sqLb1lBqlnQRMFsFu8Mci+P+VIW88Tt4loQnyVH5eQ==",
+  "dgSpecHash": "/9unYLS7QL/AHfF5BYwJbk9A6YxxAUorhrtySQSKksZ5Q2njbJTk/jEp5NOwHYvTBGhoDNyJPbuX/aCDlQ+aAg==",
   "success": true,
   "projectFilePath": "C:\\Documents\\UiPath\\Clase06_REF_00\\.local\\",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\documentformat.openxml\\2.12.1\\documentformat.openxml.2.12.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\fluentftp\\34.0.0\\fluentftp.34.0.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\markdig.signed\\0.21.1\\markdig.signed.0.21.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.applicationinsights\\2.15.0\\microsoft.applicationinsights.2.15.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.aspnet.signalr.client\\2.4.0\\microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
@@ -122,6 +123,8 @@
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0\\runtime.win7-x64.runtime.native.system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\ssh.net\\2020.0.1\\ssh.net.2020.0.1.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230306.1\\system.activities.viewmodels.1.0.0-20230306.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
@@ -235,6 +238,7 @@
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.codedworkflows\\23.2.0-alpha.3503132\\uipath.codedworkflows.23.2.0-alpha.3503132.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\uipath.excel.activities.2.20.0-preview.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\uipath.ftp.activities.2.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.ocr.activities\\3.15.0\\uipath.ocr.activities.3.15.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.ocr.contracts\\2.14.0\\uipath.ocr.contracts.2.14.0.nupkg.sha512",

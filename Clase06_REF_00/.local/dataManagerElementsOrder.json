@@ -85,6 +85,58 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/testDataTime.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "fechaDataTIme&Sequence_3",
+        "fechaStr&Sequence_1",
+        "fechaHoy&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/testString.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "posPayphone&Sequence_1",
+        "lineaEx&Sequence_2",
+        "lineasTexto&Sequence_1",
+        "letraCancion&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/testRegEx.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "textoManipulado&Sequence_1",
+        "textoEntrada&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/envioFtp.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "passwordFtp&Sequence_1",
+        "usuarioFtp&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_rutaRemota",
+        "in_rutaArchivo",
+        "in_assetCredencialFtp",
+        "inftpServer"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

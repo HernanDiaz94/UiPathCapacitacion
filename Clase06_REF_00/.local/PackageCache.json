@@ -12,10 +12,10 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\excelnumberformat\\1.0.10\\lib/netstandard2.0/ExcelNumberFormat.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/netstandard2.0/Microsoft.VisualStudio.OLE.Interop.dll",
         "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OOXML.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXml4Net.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\portable.bouncycastle\\1.8.9\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
@@ -23,8 +23,8 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/Microsoft.Vbe.Interop.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/Office.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib/net5.0-windows7.0/UiPath.Excel.dll",
         "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.platform\\23.4.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
@@ -62,8 +62,8 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.management.infrastructure.cimcmdlets\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.powershell.commands.diagnostics\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.powershell.commands.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\microsoft.powershell.commands.utility\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -99,8 +99,8 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.duplex\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Duplex.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.http\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Http.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.nettcp\\4.7.0\\lib/netstandard2.0/System.ServiceModel.NetTcp.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.security\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Security.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.syndication\\5.0.0\\lib/netstandard2.0/System.ServiceModel.Syndication.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.serviceprocess.servicecontroller\\5.0.0\\runtimes/win/lib/netstandard2.0/System.ServiceProcess.ServiceController.dll",
@@ -129,8 +129,8 @@
         "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview"
     },
@@ -165,18 +165,33 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities\\23.4.1-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FTP.Activities",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\fluentftp\\34.0.0\\lib/net5.0/FluentFTP.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\ssh.net\\2020.0.1\\lib/netstandard2.0/Renci.SshNet.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\lib/netstandard2.0/SshNet.Security.Cryptography.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib/net5.0-windows7.0/UiPath.FTP.Activities.Design.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib/net5.0-windows7.0/UiPath.FTP.Activities.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib/net5.0-windows7.0/UiPath.FTP.dll"
+      ],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0"
     }
   ],
   "Conflicts": [],
@@ -241,6 +256,36 @@
       "Id": "ExcelNumberFormat",
       "Version": "1.0.10",
       "Dependencies": []
+    },
+    "FluentFTP": {
+      "Id": "FluentFTP",
+      "Version": "34.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Console",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.NameResolution",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Sockets",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        }
+      ]
     },
     "Markdig.Signed": {
       "Id": "Markdig.Signed",
@@ -1582,6 +1627,21 @@
       "Version": "1.3.3",
       "Dependencies": []
     },
+    "SSH.NET": {
+      "Id": "SSH.NET",
+      "Version": "2020.0.1",
+      "Dependencies": [
+        {
+          "Item1": "SshNet.Security.Cryptography",
+          "Item2": "[1.3.0, 1.3.0]"
+        }
+      ]
+    },
+    "SshNet.Security.Cryptography": {
+      "Id": "SshNet.Security.Cryptography",
+      "Version": "1.3.0",
+      "Dependencies": []
+    },
     "System.Activities.ViewModels": {
       "Id": "System.Activities.ViewModels",
       "Version": "1.0.0-20230306.1",
@@ -2621,6 +2681,68 @@
       "Id": "System.Net.Http.WinHttpHandler",
       "Version": "5.0.0",
       "Dependencies": []
+    },
+    "System.Net.NameResolution": {
+      "Id": "System.Net.NameResolution",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "runtime.native.System",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tracing",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Handles",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Principal.Windows",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        }
+      ]
     },
     "System.Net.Primitives": {
       "Id": "System.Net.Primitives",
@@ -3888,6 +4010,20 @@
         }
       ]
     },
+    "UiPath.FTP.Activities": {
+      "Id": "UiPath.FTP.Activities",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "FluentFTP",
+          "Item2": "[34.0.0, )"
+        },
+        {
+          "Item1": "SSH.NET",
+          "Item2": "[2020.0.1, )"
+        }
+      ]
+    },
     "UiPath.ImageProcessing": {
       "Id": "UiPath.ImageProcessing",
       "Version": "23.4.0",
@@ -4272,6 +4408,16 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\excelnumberformat\\1.0.10\\lib\\netstandard2.0\\ExcelNumberFormat.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\excelnumberformat\\1.0.10"
+    },
+    {
+      "Package": {
+        "Id": "FluentFTP",
+        "Version": "34.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\fluentftp\\34.0.0\\lib\\net5.0\\FluentFTP.dll"
+      ],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\fluentftp\\34.0.0"
     },
     {
       "Package": {
@@ -4821,10 +4967,10 @@
         "Version": "2.5.5"
       },
       "Assemblies": [
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OOXML.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\npoi\\2.5.5"
     },
@@ -5067,6 +5213,26 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\sharpziplib\\1.3.3\\lib\\netstandard2.1\\ICSharpCode.SharpZipLib.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\sharpziplib\\1.3.3"
+    },
+    {
+      "Package": {
+        "Id": "SSH.NET",
+        "Version": "2020.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\ssh.net\\2020.0.1\\lib\\netstandard2.0\\Renci.SshNet.dll"
+      ],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\ssh.net\\2020.0.1"
+    },
+    {
+      "Package": {
+        "Id": "SshNet.Security.Cryptography",
+        "Version": "1.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\lib\\netstandard2.0\\SshNet.Security.Cryptography.dll"
+      ],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0"
     },
     {
       "Package": {
@@ -5514,6 +5680,14 @@
     },
     {
       "Package": {
+        "Id": "System.Net.NameResolution",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\system.net.nameresolution\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Net.Primitives",
         "Version": "4.3.0"
       },
@@ -5880,8 +6054,8 @@
         "Version": "4.7.0"
       },
       "Assemblies": [
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.Primitives.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.Primitives.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.servicemodel.primitives\\4.7.0"
     },
@@ -6107,11 +6281,23 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\Microsoft.Vbe.Interop.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\Office.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FTP.Activities",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib\\net5.0-windows7.0\\UiPath.FTP.Activities.Design.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib\\net5.0-windows7.0\\UiPath.FTP.Activities.dll",
+        "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0\\lib\\net5.0-windows7.0\\UiPath.FTP.dll"
+      ],
+      "Path": "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ftp.activities\\2.3.0"
     },
     {
       "Package": {
@@ -6195,8 +6381,8 @@
       "Assemblies": [
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview"
     },
@@ -6224,11 +6410,11 @@
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview"
     },
@@ -6240,9 +6426,9 @@
       "Assemblies": [
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0"
     }
