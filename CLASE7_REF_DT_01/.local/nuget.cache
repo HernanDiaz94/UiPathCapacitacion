@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0AidCeCL6WBvv2oUylL6BjbWkM7/Yi07YMtUJIAC5izwiZjIzSN9OSo9UA5igphtb4l5ELphOgsxmKlnif6dBw==",
+  "dgSpecHash": "EO1z19bZH0/lC21wFMh6p7tKf0ng/P+FeT4yeQlEL4JCSxxyfQAR3tKjWVjk6KU1d0LXD+dX18i1WvYfs7D/hg==",
   "success": true,
   "projectFilePath": "C:\\Documents\\UiPath\\CLASE7_REF_DT_01\\.local\\",
   "expectedPackageFiles": [
@@ -248,22 +248,22 @@
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath\\23.4.56.1490\\uipath.23.4.56.1490.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath\\23.4.57.3408\\uipath.23.4.57.3408.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.codedworkflows\\23.2.0-alpha.3503132\\uipath.codedworkflows.23.2.0-alpha.3503132.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.database.activities\\1.7.1\\uipath.database.activities.1.7.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.excel.activities\\2.20.0-preview\\uipath.excel.activities.2.20.0-preview.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.ocr.activities\\3.15.0\\uipath.ocr.activities.3.15.0.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\uipath.ocr.activities.3.15.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.ocr.contracts\\2.14.0\\uipath.ocr.contracts.2.14.0.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.platform\\23.4.0\\uipath.platform.23.4.0.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.platform\\23.4.1\\uipath.platform.23.4.1.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.system.activities\\23.4.1-preview\\uipath.system.activities.23.4.1-preview.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.system.runtime.windows\\23.4.1-preview\\uipath.system.runtime.windows.23.4.1-preview.nupkg.sha512",
     "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.testing.activities\\23.4.0-preview\\uipath.testing.activities.23.4.0-preview.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities\\23.4.1-preview\\uipath.uiautomation.activities.23.4.1-preview.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.uiautomation.activities.runtime\\23.4.1-preview\\uipath.uiautomation.activities.runtime.23.4.1-preview.nupkg.sha512",
-    "C:\\Users\\herna_wr2eacm\\AppData\\Local\\UiPath\\NugetFallbackFolder\\uipath.vision\\3.10.0\\uipath.vision.3.10.0.nupkg.sha512"
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\uipath.testing.activities.23.4.0.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.uiautomation.activities\\23.4.3\\uipath.uiautomation.activities.23.4.3.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.3\\uipath.uiautomation.activities.runtime.23.4.3.nupkg.sha512",
+    "C:\\Users\\herna_wr2eacm\\.nuget\\packages\\uipath.vision\\3.10.1\\uipath.vision.3.10.1.nupkg.sha512"
   ],
   "logs": []
 }

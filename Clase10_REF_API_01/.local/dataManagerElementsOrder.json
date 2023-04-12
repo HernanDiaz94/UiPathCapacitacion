@@ -1,0 +1,94 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Flujos/ConsultaClima.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobjRespuesta&Sequence_3",
+        "descripcion&Flowchart_1",
+        "estado&Flowchart_1",
+        "humedad&Flowchart_1",
+        "temperatura&Flowchart_1",
+        "cuerpoRespuesta&Flowchart_1",
+        "codRespuesta&Flowchart_1",
+        "dtDatosInsercion&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_appid",
+        "in_rutaArchivo",
+        "in_pais",
+        "in_ciudad",
+        "in_endpoint"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Flujos/Dispacher.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtCiudades&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ColaOrchestrator",
+        "in_rutaArchivo"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Flujos/TemFormateo.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_textoSalida",
+        "in_textoEntrada"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

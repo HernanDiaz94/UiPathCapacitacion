@@ -71,10 +71,12 @@
       "Path": "WorkFlows/ConsultarRazonSocial.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "in_cuit&Sequence_1",
-        "out_razonSocial&Sequence_1"
+        "msj&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_razonSocial",
+        "in_cuit"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
