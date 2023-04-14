@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dtCelulares&StateMachine_1",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
         "BusinessException&StateMachine_1",
@@ -36,9 +37,32 @@
       "Path": "WorkFlows/ModeloCelulares.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dtInfoCelulares&Sequence_1"
+        "linkTienda&Sequence_5",
+        "nfc&Sequence_5",
+        "ram&Sequence_5",
+        "precio&Sequence_5",
+        "rutaExcel&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/ConsultarInfoCelular.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "linkProductoEnTienda&Sequence_2",
+        "textoRam&Sequence_2",
+        "textoNFC&Sequence_2",
+        "textoPrecio&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_linkTienda",
+        "out_Precio",
+        "out_Nfc",
+        "out_Ram",
+        "in_modeloCelular"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

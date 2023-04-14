@@ -1,0 +1,305 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ConsultarInfoCelular" this:ConsultarInfoCelular.in_modeloCelular="Motorola G42" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_modeloCelular" Type="InArgument(x:String)" />
+    <x:Property Name="out_Ram" Type="OutArgument(x:Int32)" />
+    <x:Property Name="out_Nfc" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_Precio" Type="OutArgument(x:Double)" />
+    <x:Property Name="out_linkTienda" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1114.4,1748</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ConsultarInfoCelulares_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ConsultarInfoCelular" sap:VirtualizedContainerService.HintSize="608,1683.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Tecno Compro | Tienda Online" sap:VirtualizedContainerService.HintSize="545.6,1571.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="79be2312-c55c-4863-bc88-ffebec37c695" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="ObtencionInfo" sap:VirtualizedContainerService.HintSize="512,1354.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="textoPrecio" />
+              <Variable x:TypeArguments="x:String" Name="textoNFC" />
+              <Variable x:TypeArguments="x:String" Name="textoRam" />
+              <Variable x:TypeArguments="x:String" Name="linkProductoEnTienda" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-input'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" Text="[in_modeloCelular + &quot;[k(Enter)]&quot;]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/" CvElementArea="480, 275, 1037, 58" CvTextArea="500, 291, 336, 22" CvTextArgument="Buscar productos, marcas y ofertas..." CvType="InputBox" DesignTimeRectangle="482, 278, 979, 53" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT search-input'" FullSelectorArgument="&lt;webctrl id='search-input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-input' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="37dc0a18-997e-4b03-a67e-9977ffc815d4" ImageBase64="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" InformativeScreenshot="8c0f1629c7eabdf3c2bdc235ac184450.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tecno Compro | Tienda Online' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Moto G42'" sap:VirtualizedContainerService.HintSize="449.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/motorola-g42" CvTextArgument="Moto G42 64 Gb Verde Atlantico 4 Gb Ram" CvType="Text" DesignTimeRectangle="837, 496, 784, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Moto G42'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='ui-search-item__title shops__item-title' aaname=' Moto G42 64 Gb  Verde Atlántico 4 Gb Ram' check:innerText='Moto G42 64 Gb Verde Atlántico 4 Gb Ram' /&gt;" Guid="1e27b320-1ab7-402c-800c-65dc219f319b" ImageBase64="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" InformativeScreenshot="a82f902f9fa37a5a76582374434028f8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tecno Compro | Motorola G42' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Sequence DisplayName="Obtener capacidad de RAM" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'Memoria RAM:4 GB'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" TextString="[textoRam]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/moto-g42-64-gb-verde-atlantico-4-gb-ram/p/MLA19564577?pdp_filters=seller_id:214598734#position=1&amp;search_layout=stack&amp;type=item&amp;tracking_id=4be6c7d2-bbc3-4d6c-a9d4-61d4c52db92c" CvTextArgument="GB" CvType="AnyWordGroup" DesignTimeRectangle="959, 596, 44, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'4 GB'" FullSelectorArgument="&lt;webctrl parentid='picker-label-RAM' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='picker-label-RAM' tag='SPAN' type='' class=' ui-pdp-color--BLACK' /&gt;" Guid="7107d407-b784-4f78-9637-bee7419ef4bc" InformativeScreenshot="4a65d503a3bdf0170c8eb993b1405b68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Moto G42 64 GB verde atlántico 4 GB RAM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Memoria RAM:" CvType="Text" DesignTimeRectangle="826, 597, 425, 28" ElementType="Text" FriendlyName="'Memoria RAM:4 GB'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' parentid='ui-pdp-main-container' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ui-pdp-variations__label ui-pdp-color--BLACK' parentid='ui-pdp-main-container' tag='P' aaname='Memoria RAM:' check:innerText='Memoria RAM:4 GB' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[out_Ram]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(Regex.Replace(textoRam,"\D",""))]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Sequence DisplayName="Obtener Precio double" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text '$'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" TextString="[textoPrecio]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/moto-g42-64-gb-verde-atlantico-4-gb-ram/p/MLA19564577?pdp_filters=seller_id:214598734#position=1&amp;search_layout=stack&amp;type=item&amp;tracking_id=4be6c7d2-bbc3-4d6c-a9d4-61d4c52db92c" CvTextArgument="$ 82.999" CvType="AnyWordGroup" DesignTimeRectangle="860, 556, 141, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'82.999'" FullSelectorArgument="&lt;webctrl class='andes-money-amount__fraction' parentid='ui-pdp-main-container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='andes-money-amount__fraction' parentid='ui-pdp-main-container' tag='SPAN' type='' /&gt;" Guid="99175415-1fbb-4459-8269-1639c5a6a433" InformativeScreenshot="3f853c77997c212aac2774079a2dce96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Moto G42 64 GB verde atlántico 4 GB RAM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="$ 82.999" CvType="Text" DesignTimeRectangle="823, 554, 39, 49" ElementType="Text" FriendlyName="'$'" FullSelectorArgument="&lt;webctrl class='andes-money-amount__currency-symbol' parentid='ui-pdp-main-container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='andes-money-amount__currency-symbol' parentid='ui-pdp-main-container' tag='SPAN' type='' aaname='$' check:innerText='$' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAxCAYAAABZLLCzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM7SURBVFhH7ZjPSzJBGMf9B7p089TRU3TwYBcPQeShoDx5SrpEEETnBJG81SHBQ3jo4EU6hEEgQYHWIbqoV4nKgox+iApFZPTD5+U7za6ura07ru/6vviBAZnZHT87O8/MM2uhHqYvJ0pfTpS+nChCcq+vr7SwsEAjIyN0dnbGa42nLyfKvy9Xq9Xo+vqaQqEQTU1N0eDgIFksFrmMjo7S4uIiJRIJenp64nd1jqYcpLxer0LmtwLx5eVldl+ntJTDaMXjcRoaGpL/dHV1lS4vL+n5+Vl+rblcjorFIu3t7bFRbZSMRqP08fHBe9RPS7nj42NZbHJykvL5PG9pPefwQNlsViG5vr5On5+f/Ap9qMrd3t7S2NgY63x6epoeHh54yzdaAYGRXVpaYg+HhxRFVW5ra4uJDQwM0MHBAa+t0060vry8KEZbhB9y0h9Dzu12U6VS4S11TFtKSqUSuVwuJreysqI6X3pCLhgM8lolPSEXCARYBDZjmlzjnJudnWWR14xpckCKVqvVSslkktfWMVUOKz4iFYIOh4MymQxv+cZUOYBtCWIQxFa0sbHB1i5guhy4ublRbPpY8RHBEJ+fnzdXDnx9fdHp6SmTxI4hiUoFo7u2tsaEca2RaMo18vj4SLFYjGZmZlRFh4eHaXNz07CcTpecROOcQ7Ds7+8rMhGbzUY7Ozsdj2THctKcg0g6nZYlMbJIl7qSz/3Gb9GKiMbOIglub2/zFv0YLgcgiGiG4Pj4ON3d3fEWfXRFDhweHspzEL9F6Joc6tEOuUgkwmv10TW5dlIvLbomd3FxQXa7nclh6xNBVe79/V01j5NoR+7k5EReqHFsFOGHHE5aHo+HnVlbCWrJYW3z+XxMDNvb1dUVb9GHQq5arbLTOjrFU4fDYXp7e+OtdbTkkAMiF0Q/fr/fuHNrY6qEghUfB+XGUWwlh2vwOlGPe9XOvHpQnXPNqZIkubu7S4VCQfE5AnI4Ph4dHSkyl4mJCTo/P+c9iqEqB7BXplIpxYbeTkFiivlWLpd5T+K0lJPAq7q/v2d7JD5zOZ1OeXSkgk9gc3Nz7BqkVUahKadGO0uJEfTlRPn/5P4WPSxH9AehXVriEvvDaQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Double">[out_Precio]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(textoPrecio)]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <Sequence DisplayName="Obtener NFC boolean" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'Con NFC'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" TextString="[textoNFC]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/moto-g42-64-gb-verde-atlantico-4-gb-ram/p/MLA19564577?pdp_filters=seller_id:214598734#position=1&amp;search_layout=stack&amp;type=item&amp;tracking_id=4be6c7d2-bbc3-4d6c-a9d4-61d4c52db92c" DesignTimeRectangle="414, 615, 15, 26" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sí'" FullSelectorArgument="&lt;webctrl aaname='Sí' parentid='ui-pdp-main-container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ui-pdp-main-container' tag='SPAN' type='' class='ui-pdp-color--BLACK ui-pdp-size--XSMALL ui-pdp-family--SEMIBOLD' /&gt;" Guid="5eac6f70-3b01-4c1f-be81-a2d4d8374964" InformativeScreenshot="92759c84070b0d55a9c7e1d48f27bdcd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Moto G42 64 GB verde atlántico 4 GB RAM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Con NFC:" CvType="Text" DesignTimeRectangle="335, 615, 74, 25" ElementType="Text" FriendlyName="'Con NFC'" FullSelectorArgument="&lt;webctrl aaname='Con NFC:' parentid='ui-pdp-main-container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Con NFC:' parentid='ui-pdp-main-container' tag='SPAN' type='' class='ui-pdp-color--BLACK ui-pdp-size--XSMALL ui-pdp-family--REGULAR' check:innerText='Con NFC:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAAdCAYAAAAEsFpEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMCSURBVGhD7Zc9SytBFIbv38gP8CekEStFgqiNXySiYiy0UgRB1DKYxsJGUwVSpLAyFoEEC2sRCSQBsdAQ7PxAJEQSET/eyzuZyd0ku5qdJNxmHgiys4fZPc/smTn+gUELI04TI04TI04TI04TI04TI04TI04TI04TI04TW3EvLy+IxWKYmJiAx+NBX18fZmdncXR0hEqlIqN6y9vbGzY3NzE6Ooqbmxs52sjl5SWGhoZQKBTq13xfp9/+/r6IU3SSZ4u4TCaD4eFh7O7u4v7+Ht/f3/j4+MDFxQUWFhawuLiIp6cnGd07lDgmtL29bZuInTjr9U90mmeDOK7s2NgYTk5OxETNcCLeK5fLcqR3KHH8AvjVRaPRlnfSFdeNPOviPj8/sbe3h/X19bbLkSuUSqUwPT0tvoyBgQFEIhG8vr7KCIgk/H6/WMmDgwMRw5JYXl5GsViUUa0ocSyv09NT9Pf34/z8XN6toSPObZ75fB6Dg4M4OzuTIzXq4h4eHjA5OYlEIiFHfobSDg8PMT8/LwRw5UqlEsLhMFZWVvD8/CzimITP58Pc3BxyuRy+vr5E3NbW1o8vbxVnfdbj46OM0BPnNs+rqyuMjIyIua3UxfFhfGhzgBOckCV0fX0tR2pQytLSkthgCeedmZnB7e2tuFbwOYFAQGzQdljFEZYP952dnR1xj9iJUweB3Y+y3ObphLa4eDyOjY0NVKtVOfIP6z3Oy1JVySnciiNcJJaN2pvsxFmv7XCbpxPapcqEmJhafSucQ0nppjjKojTKo0QdcW7zdKLlcFhbW2vr1PwfXxzhnsj2hGWbTCZdi3ObpxN1cUQd08fHx2ITb0Yd03x5N3tcN8UR9l1TU1MYHx93LY64ydOJBnHEqTHMZrOiMVxdXRUnm92pyjIIhUItp2q3xRG2Jl6vV0scaTfPX9sRK0ym+V+RYDCIdDqN9/d3GWXfx7FRta7U3d2dKFv+tdKpOJYce0ZdcaSdPF2JM/yOEaeJEaeJEaeJEaeJEaeJEacF8BdmBWkEn+rtVwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:Matches BuilderPattern="\b(Si|No|SI|NO|Sí)\b" FirstMatch="[textoNFC]" sap:VirtualizedContainerService.HintSize="510.4,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[textoNFC]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;\\b(Si|No|SI|NO|Sí)\\b&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\b(Si|No|SI|NO|Sí)\b" RegexOption="IgnoreCase, Compiled" />
+              <If Condition="[textoNFC=(&quot;Sí&quot;)]" sap:VirtualizedContainerService.HintSize="510.4,736.8" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476.8,292.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[textoNFC]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">True</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">[out_Nfc]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">[Convert.ToBoolean(textoNFC)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476.8,292.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[textoNFC]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">False</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">[out_Nfc]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">[Convert.ToBoolean(textoNFC)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+            <Sequence DisplayName="Obtener link producto en tienda" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'tecnocompro.com'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" TextString="[linkProductoEnTienda]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="226, 59, 1443, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'tecnocompro.com'" FullSelectorArgument="&lt;ctrl name='Tecno Compro | Tienda Online - Google Chrome - Hernan (HernanDia*' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Tecno Compro | Tienda Online - Google Chrome - Hernan (HernanDia*' role='pane' /&gt;&lt;ctrl name='Barra de direcciones y de búsqueda ' role='editable text' automationid='' /&gt;" Guid="8d657601-3289-4380-bef4-1129d70745bd" InformativeScreenshot="78d241c2b7a3d8e4ce453fa7c6d1347c.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Tecno Compro | Tienda Online - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[out_linkTienda]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[linkProductoEnTienda.ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG image-logo'" sap:VirtualizedContainerService.HintSize="449.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="79be2312-c55c-4863-bc88-ffebec37c695" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tecnocompro.com/moto-g42-64-gb-verde-atlantico-4-gb-ram/p/MLA19564577?pdp_filters=seller_id:214598734#position=1&amp;search_layout=stack&amp;type=item&amp;tracking_id=112ed0ac-c21a-481a-b65a-ef8eb49fbf0e" DesignTimeRectangle="220, 229, 196, 82" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG image-logo'" FullSelectorArgument="&lt;webctrl id='image-logo' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='image-logo' tag='IMG' type='' class='' aaname='Tecno Compro' /&gt;" Guid="a89b6a7e-dd33-451b-94d3-93146f7c3bd8" ImageBase64="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" InformativeScreenshot="6436734d5f4f75a4be5de3677d0fb01f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Moto G42 64 GB verde atlántico 4 GB RAM' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Ram: &quot;+out_Ram.ToString+&quot;- Precio: &quot;+out_Precio.ToString+&quot;- NFC: &quot;+out_Nfc.ToString+&quot;- link:  &quot;+out_linkTienda]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVPSURBVFhHvVddSFxHFN7oaq3xr8YYtUatMVbEqo3WpmI1JOquf1fduK6/67puNrpq1Pgbu2rEzR+yDWkxeZCShzxkzrkUkRLyVPLgg5QSJEgJEkrpQylSpA9FRILYGXdW791d4w9JPhjuMOebM989c+bMvYrDogfKokrI0XMNJDmFD70/jGBTai05Na8mPpsV5NifVqxv4KZ3DxNkeTVDmqgCxWYBbewpQPDyDWwP55R3i1IIUAoQ9BtbvACObIkoBO/XvSAkccrbRx+p8uJdRQ3EKUshcEEqQA0+a11Q/PYFjJIWZS9UCEaSea8bilq/xeEgNk6j4CagDzQJzNYGuYIZs+ydmGfpg8oINnYojIAh1AQZ0yqi3GD7zFo75k514Dl/ugW/ugoYwcboMTQJZSRg3cmvg/i5TshP5S73D5pQEXqS8hNzIl2oBD5cvYbapEo4Ni8dLwLf1V6iSawjCbOOOY5x1tdC5FInFORw13vjHo4pL0HWI/niR3i2h6xYsSnBk4AB0CYYIJXPc8xxztOS6BfjaN5fjtBstuQT+eKsX0x81y3kwsAw1vuWQ8hzqQAVKNeGsTaGRi5bIMHLriIKqT8TfCFOibd8+TKeMYEW+nahf8gdbIV+pZXkmTiNJqH7Kejhp2AMm89qyIkFqQ8VbWrw3rBiY/WWA0+wi1avblBbPSz+Xz9qqjhNoYFwWgeCZQLoFqxdAdV2iG9hV8JFiHzJ3tzpi/Xr4NSzQdD6c5ocd3AwlCpf2nHsUE6P1V1O2QJdXEm3wE2AMwJOjOMlgY3L/XlvDEJVLqfIYRUNZ50OnU+BhCzb0So7yzQB9yWAwQCfzcoFKDbNkH2Hm+Voxsw+KZn1aUF5yM3boDnCtuCFVADNgXXpFjjRD+U1rj7rMeEpN8vRICY+dCV3o1rPzdugt5+SRmZxh7t1F2xcw9pETtkGvTVT1PDBaylXIB8tcLMcWvHkzA7R0RpJWjE3b+Mqlni1Ye4kSyoW0iLadBC7MIlDW2VaiutojijH4GWpgBIS+Iqb5dCJsT9KBbAENJIsNwEMY2gMpcXqey1ELdVh/JMJbPVYbm1iexTdrhWpgDII9iygXkyalgpg/U5SYORmN3TTSNTD6ZBmTPfjQ24YxZZ0mh8bUgGVcPw5N8vRKuZ2uApoIqkiNx8KXaA2uPmE5FlulmNUbEvPJ1705tshl4D/v+PYEs8pB8Jd/MarFuJ/lgpgOdOJ562cIoddvBlUDTGyEsomt2D6I045EIZQZ2DlV+qL3aY3RcsZTnFHP5ZbHOXTKYKdceXGAGi6OWVfuIqlOZUQ9pfr2+shZeY78fquOaO4IbbHaCF60TUKKuKz3o0qaw+UBHCqR9BzrxxCbbEAgb9LF2f9IpqM9KOlkFN3Rz/RVReDj6R4OBywK1pH4p4NYKXQRNLizOSroBryiZ8F8wKMjzOieoiQ1QKZ0671nzUWVSNkPJgU+998HTPYSI/SBF/aHckod8Qiw8bppfWymsQ8oVXtMa0DM1ry8S80Smvy7duZU0dOz9EbMoovsTd6QAgwwpkHDmdyhztjjubYLmeTLuxYXEtOzt/G3oOfJHqG/S5DzmgR8Vt1/0Laq1EuoaUcksQxYj78lzEDPU65VRg5Vwx+fG/f3Fj+aCBs6QpeMLfC13vv+dT9+6G8uytMmOnbAQUaPST/cBFOLNL6/jf7UiqFo2u0rdL/hH8qyPFXNRA720zSLTa8HMan7g2bzfbUbrfve8IwaQxvg5zsBvhU0JO0aj1J1xjg8/MDoDtUxVQMDQ5sjo+PT9lsE9u/X+8PCsX/ceSm4ih2ECsAAAAASUVORK5CYII=" InformativeScreenshot="f87f56ed27fb48a16b27f83c02330147.jpg" Selector="&lt;html app='chrome.exe' title='Tecno Compro | Tienda Online' /&gt;" Title="Tecno Compro | Tienda Online" Url="https://www.tecnocompro.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
