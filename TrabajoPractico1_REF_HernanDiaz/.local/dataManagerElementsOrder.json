@@ -27,6 +27,7 @@
         "ShouldStop&Sequence_25"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_rutaExcel",
         "in_OrchestratorQueueName",
         "in_OrchestratorQueueFolder"
       ],
@@ -37,10 +38,6 @@
       "Path": "WorkFlows/ModeloCelulares.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "linkTienda&Sequence_5",
-        "nfc&Sequence_5",
-        "ram&Sequence_5",
-        "precio&Sequence_5",
         "rutaExcel&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -62,6 +59,36 @@
         "out_Nfc",
         "out_Ram",
         "in_modeloCelular"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WorkFlows/ObtencionInfoCelulares.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "textoLinkTienda&Sequence_4",
+        "textoPrecio&Sequence_4",
+        "textoNfc&Sequence_4",
+        "textoRam&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_linkTienda",
+        "out_precio",
+        "out_nfc",
+        "out_ram",
+        "in_modeloCelulares"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
