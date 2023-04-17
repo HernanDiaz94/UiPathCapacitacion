@@ -35,30 +35,20 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "WorkFlows/ModeloCelulares.xaml",
+      "Path": "WorkFlows/InfoModeloCelulares.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "rutaExcel&Flowchart_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "WorkFlows/ConsultarInfoCelular.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "linkProductoEnTienda&Sequence_2",
-        "textoRam&Sequence_2",
-        "textoNFC&Sequence_2",
-        "textoPrecio&Sequence_2"
+        "nombreTienda&Flowchart_1",
+        "precio&Flowchart_1",
+        "nfc&Flowchart_1",
+        "ram&Flowchart_1",
+        "toEmailprofeGabrielMarin&Sequence_5",
+        "asuntoEmail&Sequence_5",
+        "rutaExcelSalida&Flowchart_1",
+        "dtInfoCelulares&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "out_linkTienda",
-        "out_Precio",
-        "out_Nfc",
-        "out_Ram",
-        "in_modeloCelular"
+        "in_modeloCelulares"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -78,17 +68,36 @@
       "Path": "WorkFlows/ObtencionInfoCelulares.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "textoLinkTienda&Sequence_4",
+        "textoNombreTienda&Sequence_4",
+        "nfcNoExist&Sequence_10",
         "textoPrecio&Sequence_4",
         "textoNfc&Sequence_4",
         "textoRam&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [
-        "out_linkTienda",
-        "out_precio",
-        "out_nfc",
+        "in_modeloCelulares",
         "out_ram",
-        "in_modeloCelulares"
+        "out_nfc",
+        "out_precio",
+        "out_nombreTienda"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

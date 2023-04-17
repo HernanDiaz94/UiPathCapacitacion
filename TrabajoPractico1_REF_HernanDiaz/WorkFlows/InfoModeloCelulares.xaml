@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ModeloCelulares" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ModeloCelulares" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_modeloCelulares" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>818.4,701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1114.4,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ModeloCelulares_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -47,6 +47,13 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -101,16 +108,21 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="InfoModeloCelulares" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
-      <Variable x:TypeArguments="x:String" Name="rutaExcelSalida">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Data/Output/InfoCelularesResultado.xlsx</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Data/Output/InfoCelularesResultado.xlsx" Name="rutaExcelSalida" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtInfoCelulares" />
+      <Variable x:TypeArguments="x:Int32" Name="ram" />
+      <Variable x:TypeArguments="x:Boolean" Name="nfc" />
+      <Variable x:TypeArguments="x:Double" Name="precio" />
+      <Variable x:TypeArguments="x:String" Name="nombreTienda" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,7 +149,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:BuildDataTable DataTable="[dtInfoCelulares]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Ram&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Precio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NFC&quot; msdata:Caption=&quot;&quot; type=&quot;xs:boolean&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Tienda&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:BuildDataTable DataTable="[dtInfoCelulares]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Ram&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Precio&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;NFC&quot; msdata:Caption=&quot;&quot; type=&quot;xs:boolean&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tienda&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
       </Sequence>
       <FlowStep.Next>
         <FlowStep x:Name="__ReferenceID0">
@@ -149,37 +161,49 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence DisplayName="ConsultaCelulares" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="ram" />
-              <Variable x:TypeArguments="x:Boolean" Name="nfc" />
-              <Variable x:TypeArguments="x:Double" Name="precio" />
-              <Variable x:TypeArguments="x:String" Name="nombreTienda" />
-            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WorkFlows\ObtencionInfoCelulares.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="WorkFlows\ObtencionInfoCelulares.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WorkFlows\ObtencionInfoCelulares.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="411.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="WorkFlows\ObtencionInfoCelulares.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_modeloCelulares">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_modeloCelulares" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:Int32" x:Key="out_ram">
-                  <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="ram" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:Boolean" x:Key="out_nfc">
-                  <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="nfc" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:Double" x:Key="out_precio">
-                  <VisualBasicValue x:TypeArguments="x:Double" ExpressionText="precio" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="out_nombreTienda">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="nombreTienda" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_modeloCelulares">[in_modeloCelulares]</InArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_ram">[ram]</OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="out_nfc">[nfc]</OutArgument>
+                <OutArgument x:TypeArguments="x:Double" x:Key="out_precio">[precio]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_nombreTienda">[nombreTienda]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {ram,precio,nfc,nombreTienda}]" DataTable="[dtInfoCelulares]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="411.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;FlujoPadre: &quot;+ram.ToString+&quot; - &quot;+nfc.ToString+&quot; - &quot;+precio.ToString+&quot; - &quot;+nombreTienda]" />
+            <If Condition="[(ram&lt;&gt;0 )Or (precio&gt;0)  Or (nfc&lt;&gt; (True or False)) Or  (nombreTienda= &quot;&quot;)]" sap:VirtualizedContainerService.HintSize="411.2,640.8" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="377.6,277.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {ram,precio,nfc,nombreTienda}]" DataTable="[dtInfoCelulares]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334.4,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:AddDataRow>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="377.6,180" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;dato incorrecto&quot;)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_7" />
+                </Sequence>
+              </If.Else>
+            </If>
           </Sequence>
           <FlowStep.Next>
             <FlowStep x:Name="__ReferenceID1">
@@ -189,13 +213,63 @@
                   <av:Size x:Key="ShapeSize">200,83.2</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Archivo de salida " sap:VirtualizedContainerService.HintSize="449.6,228" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Archivo de salida " sap:VirtualizedContainerService.HintSize="592,964.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:AppendRange DataTable="[dtInfoCelulares]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Info Celulares" WorkbookPath="[rutaExcelSalida]" />
+                <ui:AppendRange DataTable="[dtInfoCelulares]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="529.6,116" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Info Celulares" WorkbookPath="[rutaExcelSalida]" />
+                <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="hernan.diiaz@gmail.com" DisplayName="Use Gmail" EmailAddress="hernan.diiaz@gmail.com" sap:VirtualizedContainerService.HintSize="529.6,696.8" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
+                  <umab:GmailApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Envio de Email" sap:VirtualizedContainerService.HintSize="496,515.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Default="marinb.gabriel@gmail.com" Name="toEmailprofeGabrielMarin" />
+                          <Variable x:TypeArguments="x:String" Default="correo tp rpa" Name="asuntoEmail" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,403.2" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[asuntoEmail]" To="[toEmailprofeGabrielMarin]" UseDocumentAsBody="False">
+                          <umab:SendMailX.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                              <InArgument x:TypeArguments="x:String">C:\Users\herna_wr2eacm\Desktop\orchestratorHernanDiaz.PNG</InArgument>
+                            </scg:List>
+                          </umab:SendMailX.Files>
+                          <umab:SendMailX.HtmlBodyFromFile>
+                            <umabh:HtmlContentArgument FilePath=".data/HtmlContent0.html">
+                              <umabh:HtmlContentArgument.RuntimeImages>
+                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                              </umabh:HtmlContentArgument.RuntimeImages>
+                              <umabh:HtmlContentArgument.ValueMappings>
+                                <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
+                                  <umabh:HtmlTableValueMapping Name="dtInfoCelulares" Value="[dtInfoCelulares]" />
+                                  <umabh:HtmlTextValueMapping Name="ram" Value="[ram]" />
+                                </scg:List>
+                              </umabh:HtmlContentArgument.ValueMappings>
+                            </umabh:HtmlContentArgument>
+                          </umab:SendMailX.HtmlBodyFromFile>
+                        </umab:SendMailX>
+                      </Sequence>
+                    </ActivityAction>
+                  </umab:GmailApplicationCard.Body>
+                  <umab:GmailApplicationCard.ClientId>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </umab:GmailApplicationCard.ClientId>
+                  <umab:GmailApplicationCard.ClientSecret>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </umab:GmailApplicationCard.ClientSecret>
+                </umab:GmailApplicationCard>
               </Sequence>
             </FlowStep>
           </FlowStep.Next>
